@@ -7,7 +7,7 @@ int main()
 {
     int number;
     scanf("%d", &number);
-    for (int i = 0; i < number; i++)
+    for (int i = number; i > 0; i--)
         printf("*");
     return 0;
 }
