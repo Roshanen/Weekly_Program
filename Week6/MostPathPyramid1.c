@@ -15,4 +15,5 @@ int main()
     bi = (tree[i][bi] > tree[i][bi + 1]) ? bi : bi + 1;
   }
   printf("%d",sum);
+  return 0;
 }
