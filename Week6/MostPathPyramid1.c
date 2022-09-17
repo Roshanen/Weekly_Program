@@ -6,14 +6,11 @@ int main()
   scanf("%d", &n);
   int tree[n][n];
   int sum = 0;
+  int bi = 0;
   for (int i = 0; i < n; i++)
   {
     for (int j = 0; j <= i; j++)
       scanf("%d", &tree[i][j]);
-  }
-  int bi = 0;
-  for (int i = 0; i < n; i++)
-  {
     sum += (tree[i][bi] > tree[i][bi + 1]) ? tree[i][bi] : tree[i][bi + 1];
     bi = (tree[i][bi] > tree[i][bi + 1]) ? bi : bi + 1;
   }
