@@ -12,11 +12,11 @@ int main()
   char word1[100], word2[100], word3[100];
   scanf("%[^,\n],%[^,\n],%[^\n]", word1, word2, word3);
   if (az(word1)&&number(word1)&&AZ(word1)&&sp(word1)&&len(word1))
-    printf("Kob");
+    printf("%s (Kob)",word1);
   else if (az(word2)&&number(word2)&&AZ(word2)&&sp(word2)&&len(word2))
-    printf("Romtham");
+    printf("%s (Romtham)",word2);
   else if (az(word3)&&number(word3)&&AZ(word3)&&sp(word3)&&len(word3))
-    printf("Jojo");
+    printf("%s (Jojo)",word3);
   else
     printf("None of them");
   return 0;
