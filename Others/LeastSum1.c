@@ -51,7 +51,8 @@ int main()
       {
          for (int j = 0; j < 3; j++)
          {
-            summagic += tablei[xa - 1 + i][ya - 1 + j];
+            if(tablei[xa - 1 + i][ya - 1 + j] != 0)
+               summagic++;
             if (tablei[xa - 1 + i][ya - 1 + j] < pol)
             {
                pol = tablei[xa - 1 + i][ya - 1 + j];
